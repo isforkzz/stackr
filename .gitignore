@@ -4,3 +4,4 @@
 .env
 .vscode
 .termux
+node_modules/
