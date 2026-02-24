@@ -1,10 +1,31 @@
 {
+  "name": "@forkzz/stackr",
+  "version": "1.0.0",
+  "description": "TypeScript SDK for the Stackr API — deploy and manage your apps programmatically",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": ["stackr", "forkzz", "host", "vps", "bot", "deploy", "cloud", "api", "sdk"],
+  "author": "forkzz",
+  "license": "GPL-3.0",
   "dependencies": {
-    "axios": "^1.13.5"
+    "axios": "^1.7.0"
   },
   "devDependencies": {
-    "@types/node": "^25.3.0",
-    "tsup": "^8.5.1",
-    "typescript": "^5.9.3"
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "@types/node": "^25.3.0"
   }
 }
